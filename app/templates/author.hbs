@@ -1,11 +1,12 @@
 <div class="panel-heading">
+
   <div class="search">
-    <input type="text" placeholder="Search by Author">
+    {{input type="text" placeholder="Search by Author" value=search }}
   </div>
 
-    {{#link-to "author.create" class="btn-new"}}
-      <div class="sr-only">Add New Author</div>
-    {{/link-to}}  
+  {{#link-to "author.create" class="btn-new"}}
+    <div class="sr-only">Add New Author</div>
+  {{/link-to}}  
 
 </div>
 
