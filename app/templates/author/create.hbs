@@ -1,4 +1,4 @@
-<div class="slide-out-bg"></div>
+ <div class="slide-out-bg"></div>
 
 <div class="slide-out">
   <div class="slide-out-card">
@@ -13,15 +13,19 @@
     </div>
 
     <div class="slide-out-content">
-      <form> 
+      <form onsubmit={{action "saveAuthor"}} > 
         <div class="field">
-          <label>First Name: {{model.first}}</label>
+          <label>First Name:</label>
           {{input type="text" placeholder="First Name" value=model.first}}
         </div>      
 
         <div class="field">
-          <label>Last Name: {{model.last}} </label>
+          <label>Last Name:</label>
           {{input type="text" placeholder="Last Name" value=model.last}}          
+        </div>
+
+        <div class="form-footer">
+          <button class="btn-submit" type="submit">Save</button>
         </div>      
 
       </form>
