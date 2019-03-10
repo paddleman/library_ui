@@ -3,9 +3,10 @@
     <input type="text" placeholder="Search by Author">
   </div>
 
-  <a href>
-    <div class="sr-only">Add New Author</div>
-  </a>
+    {{#link-to "author.create" class="btn-new"}}
+      <div class="sr-only">Add New Author</div>
+    {{/link-to}}  
+
 </div>
 
 <div class="panel-content">
