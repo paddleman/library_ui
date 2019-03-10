@@ -4,11 +4,9 @@ export default Controller.extend({
 
   actions: {
     deleteAuthor(author) {
-      console.log(author)
-
-      window.alert('Delete Author')
-
+      author.destroyRecord().then(() => {
+        this.transitionToRoute("author.index");
+      });
     }
   }
-
 });
