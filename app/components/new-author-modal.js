@@ -25,6 +25,7 @@ export default Component.extend({
       author.save().then(() => {
         this.set('showModal', false);
 
+        // onsave passed to component to set author in new book form -- added onsave action to component caller
         this.onsave(author);
       });
 
