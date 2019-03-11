@@ -16,7 +16,7 @@
       {{!-- <form onsubmit={{action "saveAuthor"}} >  --}}
       <form>
         <p class="control">
-          {{#power-select  options=model   onchange=(action "selectAuthor") as |author| }}
+          {{#power-select  onchange=(action "selectAuthor") search=(action "searchAuthor") as |author| }}
             {{author.last}},  {{author.first}}
           {{/power-select}}
         </p>  
