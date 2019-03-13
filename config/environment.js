@@ -6,6 +6,11 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    moment: {
+      includeTimezone: 'all'
+    },
+  
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,6 +27,9 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
+
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
