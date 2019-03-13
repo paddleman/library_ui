@@ -6,6 +6,7 @@ export default DS.Model.extend({
   isbn: DS.attr(),
   publishDate: DS.attr(),
 
-  author: DS.belongsTo('author')
+  author: DS.belongsTo('author'),
+  reviews: DS.hasMany('review')
 
 });
