@@ -1,12 +1,14 @@
-<div class="title">
-  <h3> {{model.reviews.length}} Reviews </h3>
+<div class="slide-out-content"> 
+  <div class="title">
+    <h3> {{model.reviews.length}} Reviews </h3>
 
-  <div class="actions">
-    {{#link-to "book.detail.new-review" model.id class="btn-secondary btn-add btn"}}
-      Add your Review
-    {{/link-to}}
+    <div class="actions">
+      {{#link-to "book.detail.new-review" model.id class="btn-secondary btn-add btn"}}
+        Add your Review
+      {{/link-to}}
+    </div>
+
   </div>
-
 </div>
 
 <ul class="review-list">
